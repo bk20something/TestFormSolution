@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AF405B6-A7A6-43B9-B46A-880587A84F50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TestForms</RootNamespace>
+    <AssemblyName>TestForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddSoliderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSoliderForm.Designer.cs">
+      <DependentUpon>AddSoliderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppRunManualForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppRunManualForm.Designer.cs">
+      <DependentUpon>AppRunManualForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProvider.cs" />
+    <Compile Include="Jobs.cs" />
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoolCRCM.cs" />
+    <Compile Include="PoolData.cs" />
+    <Compile Include="PoolHalfSuit.cs" />
+    <Compile Include="PoolManager.cs" />
+    <Compile Include="PoolOut.cs" />
+    <Compile Include="PoolRest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roster.cs" />
+    <Compile Include="RosterDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RosterDisplayForm.Designer.cs">
+      <DependentUpon>RosterDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RosterLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RosterLoadForm.Designer.cs">
+      <DependentUpon>RosterLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectOutPoolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectOutPoolForm.Designer.cs">
+      <DependentUpon>SelectOutPoolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solider.cs" />
+    <Compile Include="SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlLoader.cs" />
+    <EmbeddedResource Include="AddSoliderForm.resx">
+      <DependentUpon>AddSoliderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppRunManualForm.resx">
+      <DependentUpon>AppRunManualForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RosterDisplayForm.resx">
+      <DependentUpon>RosterDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RosterLoadForm.resx">
+      <DependentUpon>RosterLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectOutPoolForm.resx">
+      <DependentUpon>SelectOutPoolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Input\" />
+    <Folder Include="Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assest\SampleRoster.xml" />
+    <Content Include="Assest\testsplash.png" />
+    <Content Include="Assest\WebReasouces.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

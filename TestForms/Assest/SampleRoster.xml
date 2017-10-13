@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Test Roster for the Application-->
+<Roster>
+  <Solider>
+    <FirstName>Rick</FirstName>
+    <LastName>Derickson</LastName>
+    <BattleRosterNumber>DE1234</BattleRosterNumber>
+    <HeatCat>True</HeatCat>
+    <Height>6.0</Height>
+    <Weight>210</Weight>
+    <Sex>M</Sex>    
+  </Solider>
+  <Solider>
+    <FirstName>Sally</FirstName>
+    <LastName>Saltiter</LastName>
+    <BattleRosterNumber>SA2345</BattleRosterNumber>
+    <HeatCat>False</HeatCat>
+    <Height>5.6</Height>
+    <Weight>152</Weight>
+    <Sex>F</Sex>
+  </Solider>
+</Roster>

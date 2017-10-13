@@ -1,0 +1,52 @@
+--splash screen
+https://www.youtube.com/watch?v=wZ4BkPyZllY
+
+--opening a new form
+https://www.youtube.com/watch?v=STq3O-7Nzls
+There are two ways to make a form disappear from the screen. One way is to Hide the form and the other is 
+to Close the form. When a form is hidden, the form and all its properties and settings still exist in memory. 
+In other words, the form still exists, it is just not visible. When a form is closed, the form is physically 
+deleted from memory and will need to be completely recreated before it can be displayed again.
+
+--how disable resizing and fix side
+Change the FormBorderStyle to one of the Fixed values: FixedSingle, Fixed3D, FixedDialog or FixedToolWindow.
+// Define the border style of the form to a dialog box.
+form1.FormBorderStyle = FormBorderStyle.FixedDialog;
+// Set the MaximizeBox to false to remove the maximize box.
+form1.MaximizeBox = false;
+// Set the start position of the form to the center of the screen.
+form1.StartPosition = FormStartPosition.CenterScreen; 
+
+--gracefully exit an application
+https://www.youtube.com/watch?v=MPU0_-BC3Zw
+/w message box
+https://www.youtube.com/watch?v=TkO8JQGoyrA
+
+
+--Singleton pattern with forms
+https://stackoverflow.com/questions/3005732/showing-a-hidden-form
+
+--IsDisposed Method
+//It is method inherited by every object and checks to see if it has been disposed of 
+https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose
+
+
+--The use of @ when it comes to file paths and string literals
+In a string literal prefixed with @ the escape sequences starting with \ are disabled.
+This is convenient for filepaths since \ is the path separator and you don't want it to 
+start an escape sequence.
+
+In a normal string you would have to escape \ into \\ so your example would look like this "pdf\\". 
+But since it's prefixed with @ the only character that needs escaping is " (which is escaped as "") 
+and the \ can simply appear
+
+--Open File Dialog
+https://www.youtube.com/watch?v=1oBHpE7H12A
+
+--DataGridView W/ ComboBox Column
+https://www.youtube.com/watch?v=LzQSeCXYVKA
+
+TODO 
+--adding a file browser
+--adding xlm cheker to make sure form is correct
+--
